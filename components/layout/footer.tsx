@@ -1,4 +1,4 @@
-export default function PageFooter() {
+export default function Footer() {
     return (
         <div>footer!</div>
     );
