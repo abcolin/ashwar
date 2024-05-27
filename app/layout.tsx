@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
-import Providers from '@/components/layout/providers';
-import { auth } from '@/auth';
+// import Providers from '@/components/layout/providers';
+// import { auth } from '@/auth';
 
 import { cn } from "@/lib/utils"
  
@@ -21,7 +21,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const session = await auth();
+  // const session = await auth();
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
@@ -31,9 +31,9 @@ export default async function RootLayout({
           fontSans.variable
         )}
       >
-        <Providers session={session}>
+        {/* <Providers session={session}> */}
           {children}
-        </Providers>
+        {/* </Providers> */}
       </body>
     </html>
   );
