@@ -1,13 +1,13 @@
-import { UserNav } from './user-nav';
+import UserPanel from './user-panel';
 import NavBar from './navbar';
 import AshwarLogo from './ashwar-logo';
 
 export default function Header() {
     return (
-        <div className="supports-backdrop-blur:bg-background/60 fixed left-0 right-0 top-0 z-20 border-b backdrop-blur bg-zinc-950 flex h-14 items-center justify-between">
+        <div className="fixed left-0 right-0 top-0 z-20 bg-zinc-950 flex items-center justify-between px-8 py-5">
             <AshwarLogo />
-            <NavBar />
-            <UserNav />
+            <div className='grow'><NavBar /></div>
+            <UserPanel />
         </div>
     );
 }
