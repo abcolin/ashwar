@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
+import PageHeader from '@/components/layout/header';
+import PageFooter from '@/components/layout/footer';
 // import Providers from '@/components/layout/providers';
 // import { auth } from '@/auth';
 
@@ -31,9 +33,9 @@ export default async function RootLayout({
           fontSans.variable
         )}
       >
-        {/* <Providers session={session}> */}
-          {children}
-        {/* </Providers> */}
+        <PageHeader />
+        {children}
+        <PageFooter />
       </body>
     </html>
   );
