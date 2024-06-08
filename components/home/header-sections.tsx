@@ -1,21 +1,15 @@
 import Image from 'next/image'
+import { CopyIcon } from '@radix-ui/react-icons'
 
-const links = [
-  { name: 'Open roles', href: '#' },
-  { name: 'Internship program', href: '#' },
-  { name: 'Our values', href: '#' },
-  { name: 'Meet our leadership', href: '#' },
-]
 const stats = [
-  { name: 'Offices worldwide', value: '12' },
-  { name: 'Full-time colleagues', value: '300+' },
-  { name: 'Hours per week', value: '40' },
-  { name: 'Paid time off', value: 'Unlimited' },
+  { name: 'ChronicleNFT Mint', value: '29200' },
+  { name: 'Last 24 hours Mint', value: '300+' },
+  { name: 'ChronicleDOBs Mint', value: '40' },
 ]
 
 export default function HeaderSections() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 pb-24">
+    <div className="relative isolate overflow-hidden bg-gray-900">
       <Image
         src="/header-bg.jpeg"
         alt=""
@@ -24,14 +18,27 @@ export default function HeaderSections() {
         height={0}
         sizes="100vw"
       />
-      <div className="mx-auto max-w-7xl pb-6 lg:px-8">
-        <div className="w-full flex">
+      <div className="mx-auto max-w-8xl pb-6 lg:px-8">
+        <div className="w-full flex justify-between items-center px-16">
           <div className="flex gap-x-6 py-6 mb-2">
             <Image src="/contact/1.png" width={50} height={50} alt="facebook" />
             <Image src="/contact/2.png" width={50} height={50} alt="twitter" />
             <Image src="/contact/3.png" width={50} height={50} alt="youtube" />
             <Image src="/contact/4.png" width={50} height={50} alt="icon" />
             <Image src="/contact/5.png" width={50} height={50} alt="icon" />
+          </div>
+          <div className="flex text-white gap-x-4 items-center">
+            <Image
+              src="/square.png"
+              width={33}
+              height={33}
+              alt="icon"
+              className=""
+            />
+            <span className="flex-auto w-[600px]">
+              ASH WAR chronicle contract: ckb1qrgqep8saj8ags1qrgqep8saj8ags
+            </span>
+            <CopyIcon className="size-6 cursor-pointer" />
           </div>
         </div>
         <div className="text-white">
@@ -47,9 +54,8 @@ export default function HeaderSections() {
           <p className="mb-3">
             Every warrior on the dusty planet has their own story during this
             period, which has been broken down into four fragments: time,
-            {/* eslint-disable-next-line react/no-unescaped-entities */}{' '}
-            characters, location, and story framework. Let's gather these four
-            fragments and glimpse the little life of the warriors before
+            characters, location, and story framework. Let{"'"}s gather these
+            four fragments and glimpse the little life of the warriors before
             fighting against alien invasion
           </p>
           <p>
@@ -58,26 +64,34 @@ export default function HeaderSections() {
             permissions for the game
           </p>
         </div>
-        <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-            {links.map((link) => (
-              <a key={link.name} href={link.href}>
-                {link.name} <span aria-hidden="true">&rarr;</span>
-              </a>
-            ))}
-          </div>
-          <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto mt-10 max-w-5xl">
+          <Image width={1073} height={177} src="/title.png" alt="title" />
+          <dl className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-3">
             {stats.map((stat) => (
-              <div key={stat.name} className="flex flex-col-reverse">
+              <div
+                key={stat.name}
+                className="flex flex-col-reverse gap-y-2 text-center"
+              >
                 <dt className="text-base leading-7 text-gray-300">
                   {stat.name}
                 </dt>
-                <dd className="text-2xl font-bold leading-9 tracking-tight text-white">
+                <dd className="text-5xl leading-10 tracking-tight text-orange-300">
                   {stat.value}
                 </dd>
               </div>
             ))}
           </dl>
+          <div className="text-center text-white py-12">
+            <span className="inline-block w-[362px] h-[102px] bg-[url('/btn-bg.png')] mb-8 py-8 cursor-pointer opacity-70 hover:opacity-100">
+              Mint Chronicle
+              <br />
+              Fragments
+            </span>
+            <p>
+              <span className="text-3xl">1</span> Chronicle Fragment=
+              <span className="text-3xl">4000</span>＄CKB
+            </p>
+          </div>
         </div>
       </div>
     </div>

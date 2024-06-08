@@ -3,7 +3,7 @@ import { WalletIcon } from '@heroicons/react/24/outline'
 
 function Mainnet() {
   return (
-    <div className="flex justify-around items-center space-x-2 border border-white p-2 rounded-3xl bg-gradient-to-r from-gray-700 to-gray-900 hover:from-pink-500 hover:to-yellow-500 cursor-pointer">
+    <div className="flex justify-around items-center space-x-2 border border-white p-2 rounded-3xl bg-gradient-to-r from-gray-700 to-gray-900 hover:from-yellow-500 hover:to-orange-600 cursor-pointer">
       <Image src="/btc.png" width={40} height={40} alt="btc" />
       <span className="pr-6 text-2xl">BTC Mainnet</span>
     </div>
