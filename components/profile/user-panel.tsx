@@ -4,10 +4,10 @@ import { CopyIcon } from '@radix-ui/react-icons'
 
 export default function UserPanel() {
   return (
-    <div className="pt-32 pb-28 bg-slate-900 text-white">
+    <div className="pt-32 pb-28 text-white">
       <Image
-        width={20}
-        height={20}
+        width={144}
+        height={144}
         className="h-36 w-36 rounded-full mx-auto mb-8"
         src="/user.jpeg"
         alt="user"
