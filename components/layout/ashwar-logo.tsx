@@ -7,8 +7,7 @@ export default function AshwarLogo() {
       <Image
         src="/sublogo.png"
         width={102}
-        height={53}
-        className="mt-6"
+        height={35}
         alt="sublogo"
       />
     </div>

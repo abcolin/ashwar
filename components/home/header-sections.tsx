@@ -33,7 +33,7 @@ export default function HeaderSections() {
               width={33}
               height={33}
               alt="icon"
-              className=""
+              className="w-auto"
             />
             <span className="flex-auto w-[600px]">
               ASH WAR chronicle contract: ckb1qrgqep8saj8ags1qrgqep8saj8ags

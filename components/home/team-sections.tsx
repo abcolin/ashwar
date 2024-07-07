@@ -7,27 +7,27 @@ const people = [
     imageUrl: '/user.jpeg',
   },
   {
-    name: 'Leslie Alexander',
+    name: 'Leslie Alexander1',
     role: 'Co-Founder / CEO',
     imageUrl: '/user.jpeg',
   },
   {
-    name: 'Leslie Alexander',
+    name: 'Leslie Alexander2',
     role: 'Co-Founder / CEO',
     imageUrl: '/user.jpeg',
   },
   {
-    name: 'Leslie Alexander',
+    name: 'Leslie Alexander3',
     role: 'Co-Founder / CEO',
     imageUrl: '/user.jpeg',
   },
   {
-    name: 'Leslie Alexander',
+    name: 'Leslie Alexander4',
     role: 'Co-Founder / CEO',
     imageUrl: '/user.jpeg',
   },
   {
-    name: 'Leslie Alexander',
+    name: 'Leslie Alexander5',
     role: 'Co-Founder / CEO',
     imageUrl: '/user.jpeg',
   },

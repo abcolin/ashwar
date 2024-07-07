@@ -33,7 +33,7 @@ export default async function RootLayout({
           fontSans.variable
         )}
       >
-        <div className="min-h-screen pt-[117px]">
+        <div className="min-h-screen pt-[100px]">
           <PageHeader />
           {children}
           <PageFooter />
