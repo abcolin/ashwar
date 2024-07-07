@@ -1,3 +1,5 @@
+import Fragments from '@/components/profile/fragments'
+
 export default function Page() {
   return (
     <main className="flex flex-col md:flex-row md:overflow-hidden">
@@ -11,7 +13,9 @@ export default function Page() {
         <p>Time describes when your player acting at the place. </p>
         <p>Event contains your unique story in the game.</p>
       </div>
-      <div className="flex-grow p-6 md:overflow-y-auto md:p-12">222</div>
+      <div className="flex-grow md:overflow-y-auto">
+        <Fragments />
+      </div>
     </main>
   )
 }
