@@ -1,20 +1,33 @@
-import Fragments from '@/components/profile/fragments'
+import NftList from '@/components/profile/nft-list'
 
 export default function Page() {
   return (
     <main className="flex flex-col md:flex-row md:overflow-hidden">
-      <div className="w-full flex-none md:w-[300px] p-12 text-white text-lg *:mb-4">
-        <p>
-          Chronicle Fragments have 4 classifications contain Character, Place,
-          Time and Event.
-        </p>
-        <p>Character is the player you are playing with in the game. </p>
-        <p>Place is where your story happened. </p>
-        <p>Time describes when your player acting at the place. </p>
-        <p>Event contains your unique story in the game.</p>
+      <div className="w-full flex-none md:w-[400px] text-white text-lg">
+        <div className="*:mb-4 p-12">
+          <p>
+            Chronicle Fragments have 4 classifications contain Character, Place,
+            Time and Event.
+          </p>
+          <p>Character is the player you are playing with in the game. </p>
+          <p>Place is where your story happened. </p>
+          <p>Time describes when your player acting at the place. </p>
+          <p>Event contains your unique story in the game.</p>
+        </div>
+        <div className="text-center text-white py-12">
+          <span className="inline-block w-[362px] h-[102px] bg-[url('/btn-bg.png')] mb-8 py-8 cursor-pointer opacity-70 hover:opacity-100">
+            Mint Chronicle
+            <br />
+            Fragments
+          </span>
+          <p>
+            <span className="text-3xl">1</span> Chronicle Fragment=
+            <span className="text-3xl">4000</span>＄CKB
+          </p>
+        </div>
       </div>
       <div className="flex-grow md:overflow-y-auto">
-        <Fragments />
+        <NftList />
       </div>
     </main>
   )
