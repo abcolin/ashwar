@@ -24,7 +24,7 @@ const products = [
     id: 4,
     name: 'Basic TeeBasic TeeBasic TeeBasic Tee',
     imageUrl: '/product.jpeg',
-    quality: 4,
+    quality: 0,
   },
   {
     id: 5,
@@ -58,26 +58,27 @@ export default function List() {
       <div className="mx-auto max-w-2xl px-4 lg:max-w-7xl lg:px-8">
         <div className="mt-8 pb-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {products.map((product) => (
-            <div key={product.id} className="group relative">
+            <div key={product.id} className="group relative ">
               <div
                 className={clsx(
-                  'h-80 flex flex-col justify-between text-white border-solid border-[16px] rounded-2xl border-b-[32px] border-opacity-50 p-4 bg-black',
+                  'flex flex-col justify-between border border-gray-400 rounded-2xl px-4 pt-6 pb-8 bg-gradient-to-b from-transparent to-zinc-950',
                   {
-                    'border-purple-500': product.quality === 1,
-                    'border-blue-500': product.quality === 2,
-                    'border-green-500': product.quality === 3,
-                    'border-gray-500': product.quality === 4,
+                    'to-orange-500': product.quality === 0,
+                    'to-purple-500': product.quality === 1,
+                    'to-blue-500': product.quality === 2,
+                    'to-green-600': product.quality === 3,
+                    'to-gray-300': product.quality === 4,
                   }
                 )}
               >
                 <Image
                   width={20}
                   height={20}
-                  className="w-full"
+                  className="w-full rounded-xl"
                   src={product.imageUrl}
                   alt="user"
                 />
-                <p>{product.name}</p>
+                <p className='border h-40 border-gray-300 rounded-xl bg-zinc-950 p-2 mt-4 text-white size-full'>{product.name}</p>
               </div>
             </div>
           ))}

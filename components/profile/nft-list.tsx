@@ -52,16 +52,19 @@ export default function List() {
             <div key={product.id} className="group relative">
               <div
                 className={clsx(
-                  'h-80 flex justify-between text-white border-solid border-[16px] rounded-2xl border-b-[32px] border-opacity-50 p-4 bg-black',
+                  'flex justify-between text-white border border-gray-400 rounded-2xl px-4 pt-6 pb-8 bg-gradient-to-b from-transparent to-zinc-950',
                   {
-                    'border-purple-500': product.quality === 1,
-                    'border-blue-500': product.quality === 2,
-                    'border-green-500': product.quality === 3,
-                    'border-gray-500': product.quality === 4,
+                    'to-orange-500': product.quality === 0,
+                    'to-purple-500': product.quality === 1,
+                    'to-blue-500': product.quality === 2,
+                    'to-green-600': product.quality === 3,
+                    'to-gray-300': product.quality === 4,
                   }
                 )}
               >
-                {product.name}
+                <div className="w-full h-60 bg-zinc-950 rounded-xl p-4">
+                  {product.name}
+                </div>
               </div>
             </div>
           ))}
