@@ -3,7 +3,7 @@ import MintPanel from '@/components/profile/compose/mint-panel'
 
 export default function Page() {
   return (
-    <main className="flex flex-col md:flex-row md:overflow-hidden">
+    <main className="flex flex-col md:flex-row md:overflow-hidden mb-6">
       <div className="w-full flex-none md:w-[560px] text-white text-lg">
         <FragmentPanel />
       </div>

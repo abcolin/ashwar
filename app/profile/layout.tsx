@@ -16,7 +16,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           '-top-14': showNav,
         })}
       >
-        <div className="pt-14 bg-gradient-to-b from-transparent to-zinc-950 shadow-2xl shadow-zinc-950">
+        <div
+          className={clsx(
+            'bg-gradient-to-b from-transparent to-zinc-950 shadow-2xl shadow-zinc-950',
+            {
+              'pt-14': showNav,
+            }
+          )}
+        >
           {children}
         </div>
       </div>
