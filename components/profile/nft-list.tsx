@@ -45,7 +45,24 @@ const products = [
 
 export default function List() {
   return (
-    <div className="w-full">
+    <div className="w-full relative">
+      <div className="absolute right-0 -top-16 z-10">
+        <div className="flex space-x-4 text-orange-300 text-lg px-2">
+          <a className="flex space-x-1 items-center px-4 py-1 border rounded-2xl border-orange-200">
+            <span>Character</span>
+          </a>
+          <a className="flex space-x-1 items-center px-4 py-1">
+            <span>Place</span>
+          </a>
+          <a className="flex space-x-1 items-center px-4 py-1">
+            <span>Time</span>
+          </a>
+          <a className="flex space-x-1 items-center px-4 py-1">
+            <span>Event</span>
+          </a>
+        </div>
+      </div>
+
       <div className="mx-auto max-w-2xl px-4 lg:max-w-7xl lg:px-8">
         <div className="mt-8 pb-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {products.map((product) => (

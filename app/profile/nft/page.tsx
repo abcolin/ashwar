@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Page() {
   return (
-    <main className="flex flex-col md:flex-row md:overflow-hidden">
+    <main className="flex flex-col md:flex-row">
       <div className="w-full flex-none md:w-[400px] text-white text-lg">
         <div className="*:mb-4 p-12">
           <p>
@@ -29,7 +29,7 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <div className="flex-grow md:overflow-y-auto">
+      <div className="flex-grow">
         <NftList />
       </div>
     </main>

@@ -1,6 +1,6 @@
 export default function ListContent() {
   return (
-    <div className="p-3 mt-2 bg-[#cccccc]/30 rounded-lg min-h-80">
+    <div className="p-3 mt-2 bg-[#cccccc]/20 rounded-lg min-h-80">
       <div className="flex flex-col space-y-2">
         <div className="flex justify-between bg-zinc-950 rounded-2xl px-4 py-3">
           <div className="flex-1">荒原的 ｜ 阿斯皮纳 ｜ 战士</div>
