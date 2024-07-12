@@ -1,4 +1,5 @@
 import NftList from '@/components/profile/nft-list'
+import Link from 'next/link'
 
 export default function Page() {
   return (
@@ -15,11 +16,13 @@ export default function Page() {
           <p>Event contains your unique story in the game.</p>
         </div>
         <div className="text-center text-white py-12">
-          <span className="inline-block w-[362px] h-[102px] bg-[url('/btn-bg.png')] mb-8 py-8 cursor-pointer opacity-70 hover:opacity-100">
+          <Link
+            href="/profile/compose"
+            className="inline-block text-2xl w-[362px] h-[102px] bg-[url('/btn-bg.png')] mb-8 py-6 cursor-pointer opacity-70 hover:opacity-100">
             Mint Chronicle
             <br />
             Fragments
-          </span>
+          </Link>
           <p>
             <span className="text-3xl">1</span> Chronicle Fragment=
             <span className="text-3xl">4000</span>＄CKB

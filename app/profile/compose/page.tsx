@@ -1,11 +1,14 @@
+import FragmentPanel from '@/components/profile/compose/fragment-panel'
+import MintPanel from '@/components/profile/compose/mint-panel'
+
 export default function Page() {
   return (
     <main className="flex flex-col md:flex-row md:overflow-hidden">
-      <div className="w-full flex-none md:w-64 pl-6">
-        111
+      <div className="w-full flex-none md:w-[560px] text-white text-lg">
+        <FragmentPanel />
       </div>
-      <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
-        222
+      <div className="flex-grow md:overflow-y-auto">
+        <MintPanel />
       </div>
     </main>
   )

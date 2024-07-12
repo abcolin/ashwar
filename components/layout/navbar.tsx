@@ -16,6 +16,7 @@ const links = [
   {
     name: 'Home',
     href: '/home',
+    activePath: '/home',
     icon: HomeIcon,
   },
   // {
@@ -26,6 +27,7 @@ const links = [
   {
     name: 'PROFILE',
     href: '/profile/nft',
+    activePath: '/profile',
     icon: UserCircleIcon,
   },
   // {
@@ -51,7 +53,7 @@ export default function Navbar() {
                   className={clsx(
                     'flex space-x-1 items-center text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-6 py-4',
                     {
-                      'bg-gray-900 text-white': pathname === link.href,
+                      'bg-gray-900 text-white': pathname === link.href || pathname.indexOf(link.activePath) > -1,
                     }
                   )}
                 >

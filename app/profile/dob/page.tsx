@@ -1,4 +1,5 @@
 import DobList from '@/components/profile/dob-list'
+import Link from 'next/link'
 
 export default function Page() {
   return (
@@ -18,11 +19,14 @@ export default function Page() {
           </ul>
         </div>
         <div className="text-center text-white py-12">
-          <span className="inline-block w-[362px] h-[102px] bg-[url('/btn-bg.png')] mb-8 py-8 cursor-pointer opacity-70 hover:opacity-100">
+          <Link
+            href="/profile/compose"
+            className="inline-block text-2xl w-[362px] h-[102px] bg-[url('/btn-bg.png')] mb-8 py-6 cursor-pointer opacity-70 hover:opacity-100"
+          >
             Compose VIP
             <br />
             DOB
-          </span>
+          </Link>
         </div>
       </div>
       <div className="flex-grow md:overflow-y-auto">
