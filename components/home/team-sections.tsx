@@ -35,13 +35,13 @@ const people = [
 
 export default function TeamSections() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-zinc-800 text-white py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
         <div className="max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             Meet our team
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8">
             We are a professional team of encryption developers dedicated to
             cutting-edge encryption asset technology solutions. Our team members
             come from different technical fields and have rich experience and
@@ -56,14 +56,14 @@ export default function TeamSections() {
             <li key={person.name}>
               <div className="flex items-center gap-x-6">
                 <Image
-                  width={20}
-                  height={20}
-                  className="h-16 w-16 rounded-full"
+                  width={40}
+                  height={40}
+                  className="h-20 w-20 rounded-full"
                   src={person.imageUrl}
                   alt="user"
                 />
                 <div>
-                  <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                  <h3 className="text-base font-semibold leading-7 tracking-tight">
                     {person.name}
                   </h3>
                   <p className="text-sm font-semibold leading-6 text-indigo-600">

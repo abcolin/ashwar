@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Image from 'next/image'
 
 const events = [
   {
@@ -40,7 +41,15 @@ const events = [
 
 export default function TimelineSections() {
   return (
-    <div className="w-full bg-gray-50 py-24">
+    <div className="relative isolate overflow-hidden bg-gray-900 w-full text-white py-24">
+      <Image
+        src="/timeline-bg.jpg"
+        alt=""
+        className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+        width={0}
+        height={0}
+        sizes="100vw"
+      />
       <div className="mx-auto max-w-4xl">
         <div className="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
           {events.map((event) => (

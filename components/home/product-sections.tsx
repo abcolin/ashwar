@@ -11,13 +11,21 @@ const includedFeatures = [
 
 export default function Example() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="relative isolate overflow-hidden bg-gray-900 text-white py-24 sm:py-32">
+      <Image
+        src="/product-bg.jpg"
+        alt=""
+        className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+        width={0}
+        height={0}
+        sizes="100vw"
+      />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             Simple no-tricks mint
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8">
             We use vrgda's economic model to control the threat of bubbles. if
             the market demand for Chronicle DOB exceeds expectations, mint costs
             will rise. If demand falls short, costs fall. When demand is in line
@@ -39,10 +47,10 @@ export default function Example() {
             </div>
           </div>
           <div className="p-8 sm:p-10 lg:flex-auto">
-            <h3 className="text-2xl font-bold tracking-tight text-gray-900">
+            <h3 className="text-2xl font-bold tracking-tight">
               Lifetime membership
             </h3>
-            <p className="mt-6 text-base leading-7 text-gray-600">
+            <p className="mt-6 text-base leading-7">
               Spore DOB protocol is an NFT asset generation protocol based on
               DNA principle, which generates "Loot Adventure" like fields
               through random number seeds. We set up a maximum "Field Pool" for
@@ -64,7 +72,7 @@ export default function Example() {
             </div>
             <ul
               role="list"
-              className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6"
+              className="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 sm:grid-cols-2 sm:gap-6"
             >
               {includedFeatures.map((feature) => (
                 <li key={feature} className="flex gap-x-3">

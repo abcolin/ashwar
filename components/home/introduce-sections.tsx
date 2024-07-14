@@ -1,8 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
+import Image from 'next/image'
 
 export default function IntroduceSections() {
   return (
-    <div className="bg-gray-50 py-24">
+    <div className="relative isolate overflow-hidden bg-gray-900 py-24 text-white">
+      <Image
+        src="/introduce-bg.jpg"
+        alt=""
+        className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+        width={0}
+        height={0}
+        sizes="100vw"
+      />
       <div className="mx-auto max-w-7xl pb-6 lg:px-8">
         <div className="flex flex-col gap-y-3">
           <p>
